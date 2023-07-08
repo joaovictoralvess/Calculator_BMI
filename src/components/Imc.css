@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    margin-top: 60px;
+    width: 300px;
+    height: 380px;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #323237;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #000000;
+}
+
+.img_working_out {
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 30px;
+    margin-right: 30px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 10px black;
+}
+
+.title_calculator{
+    font-size: 20px;
+    text-shadow: 0px 0px 10px black;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 5px solid rgb(88, 255, 133);
+    border-width: 2px;
+}
+
+.input {
+    display: flex;
+    margin-left: 50px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #aaaaaa;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px #000000;
+    text-align: center;
+    outline: none;
+    font-weight: 700;
+}
+
+.input::placeholder {
+    font-weight: 700;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+
+button {
+    font-weight: 700;
+    font-size: 15px;
+    width: 140px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+button:hover {
+    transition: all .4s;
+    background-color: rgb(88, 255, 133);
+    box-shadow: 0px 0px 20px rgb(88, 255, 133);
+}
+
+.icons {
+    width: 30px;
+    padding-right: 10px;
+    color: rgb(88, 255, 133);
+}
+
+.total_imc {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .box {
+        width: 300px;
+        height: 330px;
+        padding: 10px;
+    }
+
+    .img_working_out {
+        width: 150px;
+    }
+
+}
