@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDumbbell, faRuler } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import './Imc.css'
+import Image from '../assets/Working_Out.svg'
 
 
 function Imc() {
@@ -21,7 +22,7 @@ function Imc() {
 
   return (
     <div className='container'>
-      <img className='img_working_out' src='src/assets/Working_Out.svg'/>
+      <img className='img_working_out' src={Image} />
       <div className='box'>
         <p className='title_calculator'>Calculadora de IMC</p>
           <h3 className='title'><FontAwesomeIcon icon={faRuler} className='icons'/>Altura</h3>
