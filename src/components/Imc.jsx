@@ -19,21 +19,6 @@ function Imc() {
     console.log(total)
   }
 
-  const escreve = () => {
-    if (total <= 18.5) {
-      return escreve
-    } else if (total > 18.5 && total < 25) {
-      return escreve
-    } else if (total > 25 && total < 30) {
-      return escreve
-    } else if (total > 30 && total < 40) {
-      return escreve
-    } else if (total > 40) {
-      return escreve
-    }
-  }
-
-
   return (
     <div className='container'>
       <img className='img_working_out' src='src\assets\Working_Out.svg'/>
@@ -45,7 +30,7 @@ function Imc() {
           <input type='number' className='input' placeholder='Peso em KG' value={weight} onChange={(e) => setWeight(e.target.value)}></input>
           <button onClick={calculator}>Calcular</button>
           {total > 0 && (
-            <p className='total_imc'>{escreve}</p>
+            <p className='total_imc'>Seu índice de massa corporal é: {total}</p>
             )}
       </div>
     </div>

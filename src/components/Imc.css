@@ -92,6 +92,7 @@ button:hover {
 .total_imc {
     font-weight: 700;
     color: #FFFFFF;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
